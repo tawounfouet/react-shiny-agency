@@ -1,6 +1,6 @@
 {
     "extends": [
         "react-app"
-    ],
-    "no-console": "error"
+    ]
+    // "no-console": "error"
 }
