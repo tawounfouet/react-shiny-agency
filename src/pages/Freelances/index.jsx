@@ -1,23 +1,39 @@
-import { useParams } from 'react-router-dom'
-import { Link } from 'react-router-dom'
 
-function Survey() {
-  const { questionNumber } = useParams()
-  const questionNumberInt = parseInt(questionNumber)
-  const prevQuestionNumber = questionNumberInt === 1 ? 1 : questionNumberInt - 1
-  const nextQuestionNumber = questionNumberInt + 1
-  return (
-    <div>
-      <h1>Questionnaire 🧮</h1>
-      <h2>Question {questionNumber}</h2>
-      <Link to={`/survey/${prevQuestionNumber}`}>Précédent</Link>
-      {questionNumberInt === 10 ? (
-        <Link to="/results">Résultats</Link>
-      ) : (
-        <Link to={`/survey/${nextQuestionNumber}`}>Suivant</Link>
-      )}
-    </div>
-  )
+import DefaultPicture from '../../assets/profile.png'
+import Card from '../../components/Card'
+ 
+const freelanceProfiles = [
+    {
+        name: 'Jane Doe',
+        jobTitle: 'Devops',
+        picture: DefaultPicture,
+    },
+    {
+        name: 'John Doe',
+        jobTitle: 'Developpeur frontend',
+        picture: DefaultPicture,
+    },
+    {
+        name: 'Jeanne Biche',
+        jobTitle: 'Développeuse Fullstack',
+        picture: DefaultPicture,
+    },
+]
+
+function Freelances() {
+    return (
+        <div>
+            <h1>Freelances 👩‍💻👨‍💻👩‍💻</h1>
+            {freelanceProfiles.map((profile, index) => (
+                <Card
+                    key={`${profile.name}-${index}`}
+                    label={profile.jobTitle}
+                    picture={profile.picture}
+                    title={profile.name}
+                />
+            ))}
+        </div>
+    )
 }
 
-export default Survey
+export default Freelances
