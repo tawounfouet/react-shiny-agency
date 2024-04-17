@@ -14,12 +14,22 @@ import FreelanceForm from './components/FreelanceForm'
 // On ajoute nos composants
 import ClientForm from './components/ClientForm'
 // import FreelanceForm from './components/FreelanceForm'
+import { createGlobalStyle } from 'styled-components'
 
+const GlobalStyle = createGlobalStyle`
+    * {
+      font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    }
 
+    body {
+      margin: 0;
+    }
+`
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
+      <GlobalStyle />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
