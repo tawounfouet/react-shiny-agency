@@ -1,4 +1,36 @@
-# Getting Started with Create React App
+# Shiny Agency App - React
+
+Site web developpé en React pour une agence de freelances (l'agence Shiny) qui souhaite proposer un questionnaire pour repérer les besoins de ses clients et mettre en avant ses talents.
+
+### Project Artefacts 
+
+![Home Page](./assets/home-page.png)
+
+![Profils Page](./assets/profils-page.png)
+
+![Results Page](./assets/results-page.png)
+
+![Question-1 Page](./assets/question-1-page.png)
+
+![Question-6 Page](./assets/question-6-page.png)
+
+
+## Archtecture du projet React Shiny Agency**
+```bash
+├── README.md
+├── node_modules
+...
+├── package.json
+├── public
+...
+├── src
+│   ├── index.js
+│   ├── components
+│   └── pages
+│       └── Home
+│            └── index.jsx 
+└── yarn.lock
+```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -23,15 +55,3 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
-
-### Project Artefacts 
-
-![Home Page](./assets/home-page.png)
-
-![Profils Page](./assets/profils-page.png)
-
-![Results Page](./assets/results-page.png)
-
-![Question-1 Page](./assets/question-1-page.png)
-
-![Question-6 Page](./assets/question-6-page.png)
