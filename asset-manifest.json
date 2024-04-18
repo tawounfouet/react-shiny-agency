@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.js": "/react-shiny-agency/static/js/main.a0b8c341.js",
+    "static/media/empty.svg": "/react-shiny-agency/static/media/empty.4f54a7d6682b94b8fdb85e395245b211.svg",
+    "static/media/404.svg": "/react-shiny-agency/static/media/404.fc9ddee48547c71d5534244cfc2a911c.svg",
+    "static/media/home-illustration.svg": "/react-shiny-agency/static/media/home-illustration.3c3e6fa7e38c96aae00aea10c3cbf9cd.svg",
+    "index.html": "/react-shiny-agency/index.html",
+    "main.a0b8c341.js.map": "/react-shiny-agency/static/js/main.a0b8c341.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.a0b8c341.js"
+  ]
+}
